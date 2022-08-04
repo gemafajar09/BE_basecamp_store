@@ -14,7 +14,7 @@ func GetProduk(c *gin.Context) {
 	var produk []models.Produk
 	var list models.Produk
 
-	data, err := db.Query("SELECT * FROM produks")
+	data, err := db.Query("SELECT * FROM produk")
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 	}

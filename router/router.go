@@ -28,6 +28,7 @@ func Router(db *sql.DB) *gin.Engine {
 		sudahlogin.GET("/user", controllers.UserId)
 		sudahlogin.POST("/addCart", controllers.AddCart)
 		sudahlogin.GET("/getCart/:id", controllers.GetCart)
+		sudahlogin.POST("/CartAksi", controllers.CartAksi)
 	}
 
 	return r

@@ -1,7 +1,7 @@
 package models
 
 type Produk struct {
-	ID          uint    `json:"id" gorm:"primaryKey"`
+	ID          uint    `json:"id"`
 	Nama_produk string  `json:"nama_produk"`
 	Deskripsi   string  `json:"deskripsi"`
 	Harga       int     `json:"harga"`
