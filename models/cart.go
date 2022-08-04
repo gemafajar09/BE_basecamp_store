@@ -1,15 +1,21 @@
 package models
 
 type Cart struct {
-	Id        int64  `json:"id" gorm:"primaryKey;autoIncrement"`
+	Id        int64  `json:"id"`
 	Id_produk int    `json:"id_produk"`
 	Id_user   int    `json:"id_user"`
 	Jumlah    int    `json:"jumlah"`
 	Tanggal   string `json:"tanggal"`
 }
 
+type MinOrMax struct {
+	Id     int64  `json:"id"`
+	Jumlah int    `json:"jumlah"`
+	Kode   string `json:"kode"`
+}
+
 type CartDetail struct {
-	Id          int64   `json:"id" gorm:"primaryKey;autoIncrement"`
+	Id          int64   `json:"id"`
 	Id_produk   int     `json:"id_produk"`
 	Id_user     int     `json:"id_user"`
 	Jumlah      int     `json:"jumlah"`
